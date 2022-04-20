@@ -10,9 +10,9 @@ const handleConsult = (req, res,accountSid, authToken) => {
 	}
 	const client = require('twilio')(accountSid, authToken);
      client.messages.create({
-	to: '+14698918404',
-	from: '+16823280293',
-	body: tempBody,
+		to: '+14698918404',
+		from: '+16823280293',
+		body: tempBody,
 })
 .then(message => console.log('Message sent successfully')); 
 }
