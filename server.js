@@ -19,9 +19,9 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 // .then(message => console.log(message.sid)); 
 
 app.get('/', (req, res)=> {
-	console.log('/home')
+	res.send('/home');
 
-});
+})
 app.post('/consult', (req, res) => {consult.handleConsult(req, res, accountSid, authToken)});
 
 
