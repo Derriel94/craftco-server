@@ -15,7 +15,7 @@ const handleConsult = (req, res,accountSid, authToken) => {
 		body: tempBody,
 		})
 		.then(message => {
-			res.json('Message was sent Correctly');
+			res.send('Message was sent Correctly');
 
 		}); 
 }
