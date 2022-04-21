@@ -13,8 +13,11 @@ const handleConsult = (req, res,accountSid, authToken) => {
 		to: '+14698918404',
 		from: '+16823280293',
 		body: tempBody,
-})
-.then(message => console.log('Message sent successfully')); 
+		})
+		.then(message => {
+			res.json('Message was sent Correctly');
+
+		}); 
 }
 
 module.exports = {
